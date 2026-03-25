@@ -1,0 +1,12 @@
+# frp 客户端配置示例
+# 将此文件放入 frp 目录，重命名为 frpc.ini
+
+[common]
+server_addr = your-frp-server.com  # 你的 frp 服务器地址
+server_port = 7000                  # frp 服务器端口
+
+[feishu-webhook]
+type = http
+local_ip = 127.0.0.1
+local_port = 3000
+custom_domains = your-domain.com    # 你的域名或 subdomain
